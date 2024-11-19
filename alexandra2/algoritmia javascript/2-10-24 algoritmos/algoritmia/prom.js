@@ -1,0 +1,1 @@
+prompt("ingresa un número: ")
