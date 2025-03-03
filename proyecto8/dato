@@ -1,9 +1,0 @@
-esto es con orm, usamos el sequelize -cli utilizando el service como puente de controller 
-
-comando de sequelize
-npm i sequelize-cli 
-npm install express sequelize sequelize-cli mysql2 dotenv
-acomodar la config del json de base de datos
-npx sequelize-cli init
-npx sequelize-cli model:generate --name Usuario --attributes nombre:string,correo:string,contrasena:string
-npx sequelize-cli db:migrate
