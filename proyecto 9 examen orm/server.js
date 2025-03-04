@@ -5,15 +5,10 @@ app.use(express.json());
 //env 
 const dotenv = require('dotenv');
 dotenv.config();
-const PacienteRouter=require("./router/pacienteRouter")
+
 //ruta principal
+const PacienteRouter=require("./router/pacienteRouter")
 app.use("/api",PacienteRouter)
-
-
-
-
-
-
 
 //servidor 
 const PORT = process.env.PORT;

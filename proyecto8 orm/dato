@@ -12,3 +12,5 @@ después de instalado
 npx sequelize-cli init
 npx sequelize-cli 
 npx sequelize-cli model:generate --name Roles --attributes nombre:string
+
+npx sequelize-cli model:generate --name Paciente --attributes nombre:string,apellido:string,direccion:string

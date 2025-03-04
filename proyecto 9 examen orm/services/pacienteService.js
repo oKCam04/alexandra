@@ -1,9 +1,9 @@
-const {paciente}=require('../models')
+const {Paciente}=require('../models')
 
 class PacienteService{
     static async listarPacientes(){
     try{
-        return await paciente.findAll();
+        return await Paciente.findAll();
     }catch(e){
         console.log("error en la consulta")
     }    
@@ -11,7 +11,7 @@ class PacienteService{
 
     static async crearPaciente(nombre,apellido,direccion){
     try{
-        return await Usuario.create({nombre,apellido,direccion})
+        return await Paciente.create({nombre,apellido,direccion})
     }catch(e){
         console.log("error en el servicio a guardar")
     }
@@ -19,7 +19,7 @@ class PacienteService{
 
     static async eliminarPaciente(id){
         try{
-            let resultadoB= await paciente.findByPk(id);
+            let resultadoB= await Paciente.findByPk(id);
             if (resultadoB){
                 resultadoB.destroy();
                 return "Usuario eliminado correctamente"
@@ -32,7 +32,8 @@ class PacienteService{
 
     static async actualizarPaciente(id,nombre,apellido,direccion){
         try{
-            return await Usuario.update({nombre,apellido,direccion},{where:{id}})
+            return await Paciente
+            .update({nombre,apellido,direccion},{where:{id}})
         }catch(e){
             console.log("error en el servicio a actualizar")
         }
