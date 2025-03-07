@@ -1,0 +1,19 @@
+npm create vite@latest proyecto-ejemplo --template react    //para iniciar el proyecto
+react 
+javascript
+cd carpeta
+npm install //instalar el npm 
+npm run dev //para correr el server
+
+
+usamos el main.jsx, para crear componentes los creamos con funciones, los exportamos e importamos en main.jsx llamandolos con el import, adicional ponerlo abajo de componentes de esta forma <saludo/>
+
+
+
+formulario 
+nombre,apellido,direccion,telefono,usuario, contraseña
+
+
+useState es un dom en la misma página ejemplo input(hola)   texto (cont=hola)
+
+eventos 
