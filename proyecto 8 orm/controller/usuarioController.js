@@ -11,8 +11,8 @@ class UsuarioController{
     }
     static async crearUsuario(req,res){
         try{
-            let {nombre,correo,contrasena}=req.body;
-            let usuario=await UsuarioService.crearUsuarios(nombre,correo,contrasena,idrole);
+            let {nombre,correo,contrasena,idrole,idempresa}=req.body;
+            let usuario=await UsuarioService.crearUsuarios(nombre,correo,contrasena,idrole,idempresa);
             res.json(req.body);
         }catch(e){
             res.json({error:"error en la peticion"})

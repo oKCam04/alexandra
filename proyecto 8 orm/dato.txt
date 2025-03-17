@@ -13,4 +13,4 @@ npx sequelize-cli init
 npx sequelize-cli 
 npx sequelize-cli model:generate --name Roles --attributes nombre:string
 
-npx sequelize-cli model:generate --name Paciente --attributes nombre:string,apellido:string,direccion:string
+npx sequelize-cli model:generate --name Reserva --attributes fechaReserva:string,lugar:string,nombreReserva:string
