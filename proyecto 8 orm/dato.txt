@@ -14,3 +14,6 @@ npx sequelize-cli
 npx sequelize-cli model:generate --name Roles --attributes nombre:string
 
 npx sequelize-cli model:generate --name Reserva --attributes fechaReserva:string,lugar:string,nombreReserva:string
+
+
+tener cuidado en las migraciones el orden, van primero las que no tiene union y segundo donde se conectan

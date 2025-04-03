@@ -32,8 +32,7 @@ class PacienteService{
 
     static async actualizarPaciente(id,nombre,apellido,direccion){
         try{
-            return await Paciente
-            .update({nombre,apellido,direccion},{where:{id}})
+            return await Paciente.update({nombre,apellido,direccion},{where:{id}})
         }catch(e){
             console.log("error en el servicio a actualizar")
         }

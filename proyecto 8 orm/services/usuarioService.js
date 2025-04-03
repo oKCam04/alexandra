@@ -1,12 +1,10 @@
-const {Usuario}=require('../models')
-const {Roles}=require('../models')
-const {Empresa}=require('../models')
+const {Usuario,Roles,Empresa}=require('../models');
 class UsuarioService{
     static async listarUsuarios(){
     try{
-        return await Usuario.findAll({include: [{ model: Roles},{ model: Empresa}]});
+        return await Usuario.findAll({includes: [{ model: Roles, as:'roles'},{ model: Empresa, as:'empresas'}]});
     }catch(e){
-        console.log("error en la consulta")
+        console.log("error en la consulta"+e)
     }    
     }
 
